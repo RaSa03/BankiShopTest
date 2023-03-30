@@ -1,0 +1,83 @@
+{
+  "renaissance-paintings": [
+    {
+      "name": "«Рождение Венеры» Сандро Боттичелли",
+      "img": "https://sr.gallerix.ru/_EX/1124510458/768903337.jpg",
+      "description": "«Рождение Венеры» - классическая интерпретация античного мифа о рождении богини любви, красоты и нежности Афродиты (в традиции римской мифологии ее зовут Венера). Как она рождается и появляется на сушу из пены морской. Все, кто видят ее, понимают, что любовь пришла. В мифе события разворачивались стремительно.",
+      "price": "1000000",
+      "sold": false,
+      "previous-price": "2000000",
+      "img-slider": [
+        {
+          "url": "https://sr.gallerix.ru/B/1332529164/9291.jpg"
+        },
+        {
+          "url": "http://www.sandrobotticelli.ru/txt/img/venera3b.jpg"
+        },
+        {
+          "url": "https://arthive.net/res/media/img/oy1000/work/51b/572750.webp"
+        }
+      ]
+    },
+    {
+      "name": "«Тайная вечеря» Леонардо Да Винчи",
+      "img": "https://i1.wp.com/www.arts-dnevnik.ru/wp-content/uploads/2017/02/IMG_2758.jpg",
+      "description": "«Та́йная ве́черя» (итал. Il Cenacolo или L'Ultima Cena) — монументальная роспись работы Леонардо да Винчи, изображающая сцену последней трапезы Христа со своими учениками. Создана в 1495—1498 годы в доминиканском монастыре Санта-Мария-делле-Грацие в Милане.",
+      "price": "3000000",
+      "sold": false,
+      "previous-price": "",
+      "img-slider": [
+        {
+          "url": "https://i2.wp.com/arts-dnevnik.ru/wp-content/uploads/2017/02/IMG_2767.jpg"
+        },
+        {
+          "url": "https://i1.wp.com/arts-dnevnik.ru/wp-content/uploads/2017/02/IMG_2793-480x640.jpg"
+        },
+        {
+          "url": "https://i0.wp.com/www.arts-dnevnik.ru/wp-content/uploads/2017/02/IMG_2774.jpg?w=645&ssl=1"
+        },
+        {
+          "url": "https://i2.wp.com/arts-dnevnik.ru/wp-content/uploads/2017/02/IMG_2777.jpg"
+        }
+      ]
+    },
+    {
+      "name": "«Сотворение Адама» Микеланджело",
+      "img": "https://n1s1.hsmedia.ru/7a/33/ce/7a33ce01bccadb2679dde1f932f22a80/690x380_0x0a330c2a_48643381608556039.jpeg",
+      "description": "Правая рука вытянута навстречу руке Адама и почти касается её. Лежащее на зелёной скале тело Адама постепенно приходит в движение, пробуждается к жизни. Вся композиция сконцентрирована на жесте двух рук. Рука Бога даёт импульс, а рука Адама принимает его, давая всему телу жизненную энергию.",
+      "sold": false,
+      "price": "5000000",
+      "previous-price": "6000000",
+      "img-slider": [
+        {
+          "url": "https://sr.gallerix.ru/M/1161425349/6190.jpg"
+        },
+        {
+          "url": "https://sr.gallerix.ru/M/1161425349/4975.jpg"
+        },
+        {
+          "url": "https://sr.gallerix.ru/M/1161425349/4138.jpg"
+        }
+      ]
+    },
+    {
+      "name": "«Урок анатомии» Рембрандт",
+      "img": "https://arthive.net/res/media/img/oy800/work/594/448167.webp",
+      "description": "Рембрандт изобразил на своём полотне персонажей иначе, чем его предшественники. Как правило, персонажи изображались сидящими рядами и смотрящими не на тело, а прямо на зрителя. Художник изобразил хирургов в профиль или полуоборот и сгруппировал их в форме пирамиды, причём главный персонаж расположен не на её вершине.",
+      "price": "",
+      "previous-price": "",
+      "sold": true,
+      "img-slider": [
+        {
+          "url": "https://portrets.ru/natyurmort/rembrandt/urok-anatomii-rembrandt-kartina-1.jpg"
+        },
+        {
+          "url": "https://portrets.ru/natyurmort/rembrandt/urok-anatomii-rembrandt-kartina-2.jpg"
+        },
+        {
+          "url": "https://portrets.ru/natyurmort/rembrandt/urok-anatomii-rembrandt-kartina-3.jpg"
+        }
+      ]
+    }
+  ]
+}
