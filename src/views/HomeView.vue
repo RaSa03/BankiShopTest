@@ -1,41 +1,67 @@
 <template>
-  <div class="body">
-    <div class="title">
-      <h1>Картины эпохи Возрождения</h1>
-    </div>
-    <div class="cards">
-      <div
-        v-for="(card, index) in cards"
-        :key="index"
-        class="card"
-        :class="{ sold: card.sold }"
-      >
-        <img :src="card.img" :alt="card.name" class="card-img" />
-        <div class="card-body">
-          <h2>{{ card.name }}</h2>
-          <div v-if="card.price" class="sales-area">
-            <div class="prices">
-              <span v-if="card['previous-price']" class="previous-price"
-                >{{ card["previous-price"] }}$</span
-              >
-              <span class="price">{{ card.price }}$</span>
+  <div class="app" :class="{ 'no-scroll': modalWindow }">
+    <my-header></my-header>
+    <div class="body">
+      <div class="title">
+        <h1>Картины эпохи Возрождения</h1>
+      </div>
+      <div class="cards">
+        <div
+          v-for="(card, index) in cards"
+          :key="index"
+          class="card"
+          :class="{ sold: card.sold }"
+        >
+          <img
+            @click="showModal(card)"
+            :src="card.img"
+            :alt="card.name"
+            class="card-img"
+          />
+          <div class="card-body">
+            <h2>{{ card.name }}</h2>
+            <div v-if="card.price" class="sales-area">
+              <div class="prices">
+                <span v-if="card['previous-price']" class="previous-price"
+                  >{{ card["previous-price"] }}$</span
+                >
+                <span class="price">{{ card.price }}$</span>
+              </div>
+              <button class="">Купить</button>
             </div>
-            <button class="">Купить</button>
+            <div v-else class="sold">Продана на аукционе</div>
           </div>
-          <div v-else class="sold">Продана на аукционе</div>
         </div>
       </div>
     </div>
+    <my-footer id="footer"></my-footer>
+    <modal-with-slider v-if="modalWindow" :modalData="modalData">
+    </modal-with-slider>
   </div>
 </template>
 <script>
+import modalWithSlider from "@/components/modalWithSlider.vue";
+import MyHeader from "@/components/MyHeader.vue";
+import MyFooter from "@/components/MyFooter.vue";
 export default {
+  components: {
+    "modal-with-slider": modalWithSlider,
+    "my-header": MyHeader,
+    "my-footer": MyFooter,
+  },
   data() {
     return {
       cards: [],
+      modalWindow: false,
+      modalData: {},
     };
   },
-  methods: {},
+  methods: {
+    showModal: function (card) {
+      this.modalWindow = true;
+      this.modalData = card;
+    },
+  },
   mounted() {
     fetch(
       "https://my-json-server.typicode.com/RaSa03/fakeServerForBankiShop/renaissance-paintings"
@@ -48,6 +74,15 @@ export default {
 };
 </script>
 <style lang="scss">
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
 .body {
   flex: 1 0 auto;
   max-width: 1216px;

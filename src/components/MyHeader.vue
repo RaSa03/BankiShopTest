@@ -15,11 +15,12 @@
       <div class="search">
         <form v-on:submit.prevent class="search-form">
           <input
+            v-model="localSearch"
             type="text"
             class="search-input"
             placeholder="Поиск по названию картины"
           />
-          <button>Найти</button>
+          <button @click="searchEmit">Найти</button>
         </form>
       </div>
     </div>
@@ -28,8 +29,12 @@
 
 <script>
 export default {
+  props: {
+    value: String,
+  },
   data() {
     return {
+      localSearch: "",
       menu: [
         {
           href: "#",
@@ -53,6 +58,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    searchEmit() {
+      this.$emit("search-product", this.localSearch);
+    },
   },
 };
 </script>
